@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse News</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pulse News</h1>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Pesquisar notícias...">
+      <button onclick="searchNews()">Buscar</button>
+    </div>
+  </header>
+
+  <nav class="categories">
+    <button onclick="searchNews('tecnologia')">Tecnologia</button>
+    <button onclick="searchNews('mundo')">Mundo</button>
+    <button onclick="searchNews('esportes')">Esportes</button>
+    <button onclick="searchNews('negócios')">Negócios</button>
+  </nav>
+
+  <main id="news-container"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
